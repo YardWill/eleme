@@ -58,7 +58,7 @@ module.exports = async ({
       return;
     }
 
-    console.log(`还要领 ${number} 个红包`);
+    console.log(`还要领 ${number} 个红包`, new Date().toLocaleString());
     index++;
     // 如果这个是最佳红包，换成指定的手机号领取
     await lottery(number === 1 ? mobile : null);
